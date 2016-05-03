@@ -1,0 +1,43 @@
+
+.profile
+	width 30%
+	min-height 690px
+	float left
+
+.profile__img
+	height 220px
+	width 100%
+
+.profile__img > img
+	display inline-block
+	
+
+.profile__menu
+	margin 0
+	padding 0
+	margin-top -2px
+
+.profile__list
+	margin 0
+	padding 0
+
+.profile__item
+	width 100%
+	padding-top 30px
+	padding-bottom 30px
+	text-align center
+	list-style none
+	background: darken($color-base, 10%)
+	&:hover
+		background: darken($color-base, 5%)
+	&:hover > a
+		text-decoration underline
+	&:active
+		background: darken($color-base, 70%)
+	&:active > a
+		color $color-base
+		text-decoration none
+
+.profile__item a
+	text-decoration none
+	font-set($color-primary, 30px, 35px)
